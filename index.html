@@ -5,31 +5,28 @@
   <meta charset="utf-8">
   <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
-
-
-
-
-
-
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Final Website</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+ 
 </head>
 
 <body>
-  <div class="all">
-  <script src="script.js"></script>
   <div class="header">
     <h2>Brogans Short Stories</h2>
   </div>
+  
+  <div class="all">
+  <script src="script.js"></script>
+ 
   <div class="menu">
-    <p>Home  About me  SS1  SS2  SS3  SS4   </p>
+    <div class="home">HOME</div>
+    <div class="aboutMe">ABOUT ME</div>
   </div>
   <div class="parent-ss">
-    <div class="ss1">book 1</div>
-    <div class="ss2">book 2</div>
-    <div class="ss3">book 3</div>
-    <div class="ss4">book 4</div>
+    <div class="ss1,show">book 1</div>
+    <div class="ss2,show">book 2</div>
+    <div class="ss3,show">book 3</div>
+    <div class="ss4,show">book 4</div>
   </div>
   <div class="parent-about">
     <div class="div1">
@@ -44,11 +41,23 @@
     Come hunting season, you can catch me exploring the great outdoors, blending my love for nature with the excitement of the chase. </div>
   </div>
   <div class="contactForm">
-    <div class="emailInput">Email</div>
-    <div class="nameInput">Full Name</div>
-    <div class="messageInput">Write me a message</div>
+     <form action="action_page.php">
+    <div class="emailInput">
+      <input type="text" id="email" name="fullemail" placeholder="Your email.." style="width:100%">
+    </div>
+    <div class="nameInput">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width:100%">
+    </div>
+    <div class="messageInput">
+      <input type="text" id="message" name="message" placeholder="Write something.." style="width:100%; height:50px;"></input>
+    </div>
     <button id="button" class="submitButton" onclick="submitMessage()">Submit</button>
+     </form>
   </div>
+    <div class="footer">
+      
+    </div>
+      
   </div>
   
     </body>
